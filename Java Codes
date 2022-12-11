@@ -1,0 +1,15 @@
+//Reverse A Number
+
+public class Reverse_a_Number {
+public static void main(String[]args) {
+	int number=123;
+	int rev=0,rem,copy=number;
+	
+	while(number>0) {
+		rem=number%10;
+		number=number/10;
+		rev=rev*10+rem;
+	}
+	System.out.println(rev+ " Is a reverse of the number");
+}
+}
